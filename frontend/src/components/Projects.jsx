@@ -1,5 +1,6 @@
 import React from 'react';
 import { projects } from '../data/projects';
+import { BrandLogo } from '../data/brandLogos';
 
 const featured = projects.find(p => p.featured);
 const others = projects.filter(p => !p.featured);
@@ -49,15 +50,22 @@ export default function Projects() {
         <div className="projects-grid">
           {others.map(p => (
             <div key={p.id} className="project-card">
-              <div className="card-icon">{p.icon}</div>
+              <div className="card-icon">
+                <BrandLogo name={p.icon} />
+              </div>
               <h3 className="card-title">{p.title}</h3>
               <p className="card-description">{p.description}</p>
               <div className="card-tags">
                 {p.tags.map(t => <span key={t} className="tag">{t}</span>)}
               </div>
-              <a href={p.github} target="_blank" rel="noopener noreferrer" className="card-cta">
+              <button
+                type="button"
+                disabled
+                aria-disabled="true"
+                className="card-cta card-cta--disabled"
+              >
                 → View on GitHub
-              </a>
+              </button>
             </div>
           ))}
         </div>

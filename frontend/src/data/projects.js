@@ -14,7 +14,7 @@ export const projects = [
     live: "",
     featured: true,
     status: "In Progress",
-    icon: "🏥",
+    icon: "react",
   },
   {
     id: 2,
@@ -25,7 +25,7 @@ export const projects = [
     github: "https://github.com/Bisrat12Amare",
     live: "",
     featured: false,
-    icon: "📊",
+    icon: "react",
   },
   {
     id: 3,
@@ -36,7 +36,7 @@ export const projects = [
     github: "https://github.com/Bisrat12Amare",
     live: "",
     featured: false,
-    icon: "🔐",
+    icon: "nodejs",
   },
   {
     id: 4,
@@ -47,7 +47,7 @@ export const projects = [
     github: "https://github.com/Bisrat12Amare",
     live: "",
     featured: false,
-    icon: "📱",
+    icon: "flutter",
   },
   {
     id: 5,
@@ -58,7 +58,7 @@ export const projects = [
     github: "https://github.com/Bisrat12Amare",
     live: "",
     featured: false,
-    icon: "⚡",
+    icon: "socketio",
   },
   {
     id: 6,
@@ -69,6 +69,6 @@ export const projects = [
     github: "https://github.com/Bisrat12Amare",
     live: "",
     featured: false,
-    icon: "🛒",
+    icon: "supabase",
   },
 ];

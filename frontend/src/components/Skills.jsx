@@ -1,19 +1,20 @@
 import React from 'react';
+import { BrandLogo } from '../data/brandLogos';
 
 const skills = [
-  { icon: '⚛️', name: 'React.js', level: 95 },
-  { icon: '🟢', name: 'Node.js', level: 92 },
-  { icon: '🚂', name: 'Express.js', level: 90 },
-  { icon: '💙', name: 'Flutter', level: 85 },
-  { icon: '🔥', name: 'Firebase', level: 88 },
-  { icon: '⚡', name: 'Supabase', level: 82 },
-  { icon: '🍃', name: 'MongoDB', level: 87 },
-  { icon: '🐘', name: 'PostgreSQL', level: 85 },
-  { icon: '🔌', name: 'REST APIs', level: 95 },
-  { icon: '🐙', name: 'Git/GitHub', level: 93 },
-  { icon: '🟨', name: 'JavaScript', level: 96 },
-  { icon: '💎', name: 'TypeScript', level: 88 },
-  { icon: '🎨', name: 'Tailwind CSS', level: 90 },
+  { logos: ['react'], name: 'React.js', level: 95 },
+  { logos: ['nodejs'], name: 'Node.js', level: 92 },
+  { logos: ['express'], name: 'Express.js', level: 90 },
+  { logos: ['flutter'], name: 'Flutter', level: 85 },
+  { logos: ['firebase'], name: 'Firebase', level: 88 },
+  { logos: ['supabase'], name: 'Supabase', level: 82 },
+  { logos: ['mongodb'], name: 'MongoDB', level: 87 },
+  { logos: ['postgresql'], name: 'PostgreSQL', level: 85 },
+  { logos: ['rest'], name: 'REST APIs', level: 95 },
+  { logos: ['git', 'github'], name: 'Git/GitHub', level: 93 },
+  { logos: ['javascript'], name: 'JavaScript', level: 96 },
+  { logos: ['typescript'], name: 'TypeScript', level: 88 },
+  { logos: ['tailwind'], name: 'Tailwind CSS', level: 90 },
 ];
 
 export default function Skills() {
@@ -26,7 +27,11 @@ export default function Skills() {
         <div className="skills-grid">
           {skills.map(skill => (
             <div key={skill.name} className="skill-card">
-              <div className="skill-icon">{skill.icon}</div>
+              <div className="skill-icon">
+                {skill.logos.map(logo => (
+                  <BrandLogo key={logo} name={logo} />
+                ))}
+              </div>
               <div className="skill-name">{skill.name}</div>
               <div className="skill-bar">
                 <div className="skill-fill" style={{ width: `${skill.level}%` }} />
