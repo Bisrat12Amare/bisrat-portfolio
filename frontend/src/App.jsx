@@ -34,7 +34,7 @@ function App() {
         </p>
         <div className="social-bar">
           {[
-            { icon: <FaGithub />, href: 'https://github.com/Bisrat12Amare', label: 'GitHub' },
+            { icon: <FaGithub />, href: 'https://github.com', label: 'GitHub' },
             { icon: <FaTelegramPlane />, href: 'https://t.me/BisratLe12', label: 'Telegram' },
             { icon: <FaEnvelope />, href: 'mailto:bisratamare88@gmail.com', label: 'Email' },
             { icon: <FaPhoneAlt />, href: 'tel:+251923118002', label: 'Phone' }

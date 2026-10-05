@@ -40,9 +40,14 @@ export default function Projects() {
               <div className="feature-tags">
                 {featured.tags.map(t => <span key={t} className="tag">{t}</span>)}
               </div>
-              <a href={featured.github} target="_blank" rel="noopener noreferrer" className="feature-link">
+              <button
+                type="button"
+                disabled
+                aria-disabled="true"
+                className="feature-link feature-link--disabled"
+              >
                 → GitHub
-              </a>
+              </button>
             </div>
           </div>
         )}

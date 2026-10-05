@@ -5,7 +5,7 @@ const contactLinks = [
   { icon: <FaEnvelope />, label: 'bisratamare88@gmail.com', href: 'mailto:bisratamare88@gmail.com' },
   { icon: <FaPhoneAlt />, label: '+251 923 118 002', href: 'tel:+251923118002' },
   { icon: <FaTelegramPlane />, label: 't.me/BisratLe12', href: 'https://t.me/BisratLe12' },
-  { icon: <FaGithub />, label: 'github.com/Bisrat12Amare', href: 'https://github.com/Bisrat12Amare' },
+  { icon: <FaGithub />, label: 'github.com', href: 'https://github.com' },
 ];
 
 export default function Contact() {
